@@ -1,6 +1,8 @@
 import React from "react";
 
 class Lifecycle extends React.Component {
+  
+  //INITIALIZATION PHASE
   constructor(props) {
     super(props);
     this.state = {
@@ -8,7 +10,8 @@ class Lifecycle extends React.Component {
     };
     console.log("In Constructor");
   }
-
+  
+//UPDATING PHASE
   //   return a Boolean value that specifies whether React should continue with the rendering or not.
   shouldComponentUpdate() {
     return true;
@@ -59,6 +62,8 @@ class Lifecycle extends React.Component {
     if (this.state.show) {
       myheader = <Child />;
     }
+    
+    // MOUNTING PHASE
     return (
       <div>
         {this.state.data}
@@ -73,6 +78,7 @@ class Lifecycle extends React.Component {
 }
 
 class Child extends React.Component {
+  //UNMOUNTING PHASE
   //   The componentWillUnmount method is called when the component is about to be removed from the DOM.
   componentWillUnmount() {
     alert("The component named Header is about to be unmounted.");
