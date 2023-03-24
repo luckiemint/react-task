@@ -2,13 +2,17 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import Header from '../Header';
 
+// rendering a table with the product data received from the API. 
 const Axiosimg = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
+        // HTTP GET request is made to the specified URL using the axios library.
         axios
             .get("https://dummyjson.com/products?limit=15")
+            // If the request is successful (i.e. response.ok is true), the setData function is called with the products data that is returned in the response.
             .then((response) => {
+                // to handle different response status codes if the request fails.
                 if (!response.ok) {
                     switch (response.status) {
                         case 400: break;
@@ -18,12 +22,12 @@ const Axiosimg = () => {
                 }
                 setData(response.data.products);
             })
-            .catch((error) => console.log(error)); // handle error
-    }, []);
+            // If the request fails, an error is logged to the console.
+            .catch((error) => console.log(error));
+    }, []); //an empty dependency array ([]) passed as the second argument to useEffect ensures that this effect is only executed once when the component is mounted, and not on every re-render.
 
     return (
         <>
-
             <Header />
             <div class="container mainContainer">
                 <div class="row">
@@ -40,6 +44,7 @@ const Axiosimg = () => {
                                 </tr>
                             </thead>
                             <tbody>
+                                {/* We then used the .map() method to iterate over the data array to render the table  */}
                                 {data.map((item) => (
                                     <tr>
                                         <th scope="row">{item.id}</th>
@@ -50,7 +55,6 @@ const Axiosimg = () => {
                                                 src={item.images[0]}
                                                 style={{ margin: 5 + "px" }}
                                             />
-
                                         </td>
                                         <td>{item.title}</td>
                                         <td>{item.brand}</td>
@@ -63,20 +67,6 @@ const Axiosimg = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className='productInfo mainContainer'>
-                {data.map((item) => (
-                    <div className='wrapper' key={item.id}>
-                        <img className='pic'
-                            key={item.images[0]}
-                            src={item.images[0]}
-                            // width="100px"
-                            style={{ margin: 5 + "px" }}
-                        />
-                        <p class="title">{item.title}</p>
-                    </div>
-                ))}
-            </div> */}
-
         </>
     );
 }
