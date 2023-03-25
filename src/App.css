@@ -16,6 +16,16 @@
   text-decoration: none;
   padding: 1em;
 }
+.headerTop {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.goBack {
+  background-color: #282c34;
+  color: white;
+  padding: 0 1em;
+  font-size: x-large;
+}
 
 .colorBtn {
   display: flex;
@@ -31,4 +41,41 @@
 }
 h1 {
   margin-bottom: 3em;
+}
+.pic {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+table tr {
+  height: 110px;
+  overflow: hidden;
+  align-items: center;
+}
+td,
+th {
+  height: 80px;
+  width: 160px;
+  text-align: center !important;
+  vertical-align: middle;
+}
+thead {
+  background-color: rgb(223, 237, 241);
+}
+.addCart {
+  border-radius: 5px;
+  padding: 0.5em;
+}
+.addCart:hover {
+  background-color: rgb(4, 130, 37);
+  color: white;
+}
+.cart {
+  width: 100%;
+  background-color: bisque;
+  text-align: end;
+  padding: 0 1em;
+}
+.cart span {
+  font-size: x-large;
 }
