@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Pankaj Rai",
+      "email": "pankaj@yahoo.com",
+      "dob": "02-10-1990"
+    },
+    {
+      "id": 3,
+      "name": "David Beckham",
+      "email": "david@gmail.com",
+      "dob": "06-11-1990"
+    },
+    {
+      "name": "Mark Thabah",
+      "email": "mk@yahoo.com",
+      "id": 5,
+      "dob": "01-01-1996"
+    }
+  ]
+}
