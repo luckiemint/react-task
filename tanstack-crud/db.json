@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "name": "Mark Thabahhh",
+      "email": "mk@yahoo.com",
+      "id": 5,
+      "dob": "01-01-1996"
+    },
+    {
+      "name": "Raj Kumar",
+      "email": "rajkumar@mail.com",
+      "id": 6
+    },
+    {
+      "name": "Prabhu Deva",
+      "email": "pd@sbdh.in",
+      "id": 7
+    },
+    {
+      "name": "Yeshika Sumi",
+      "email": "yeshi@sumi.com",
+      "id": 8
+    }
+  ]
+}
