@@ -11,7 +11,6 @@ import {
 const columnHelper = createColumnHelper();
 
 function App() {
-
   const [data, setData] = useState([]);
   useEffect(() => {
     fetchData();
@@ -38,34 +37,45 @@ function App() {
     }
   }
 
-
-
-  const columns = useMemo(() =>
-    [
-      columnHelper.accessor((row) => row.name, {
-        id: "name",
-        cell: (data) => <i>{data.getValue()}</i>,
-        header: () => <span>Name</span>,
-      }),
-      columnHelper.accessor((row) => row.email, {
-        id: "email",
-        cell: (data) => <i>{data.getValue()}</i>,
-        header: () => <span>Email</span>,
-      }),
-      columnHelper.display({
-        id: 'action',
-        header: () => <span>Action</span>,
-        cell: ({ row }) => (
-          <>
-            <Link className="btn btn-sm btn-success mx-2" to={`/update/${row.original.id}`}>Update</Link>
-            {/* <button className="btn btn-sm btn-danger mx-2" onClick={() => { console.log(row.original.id) }}>Delete</button> */}
-            <button className="btn btn-sm btn-danger mx-2" onClick={() => handleDelete(row.original.id)}>Delete</button>
-            <Link className="btn btn-sm btn-outline-primary mx-2 " to={`/read/${row.original.id}`}>View Details</Link>
-          </>
-        )
-      })
-    ]
-  )
+  const columns = useMemo(() => [
+    columnHelper.accessor((row) => row.name, {
+      id: "name",
+      cell: (data) => <i>{data.getValue()}</i>,
+      header: () => <span>Name</span>,
+    }),
+    columnHelper.accessor((row) => row.email, {
+      id: "email",
+      cell: (data) => <i>{data.getValue()}</i>,
+      header: () => <span>Email</span>,
+    }),
+    columnHelper.display({
+      id: "action",
+      header: () => <span>Action</span>,
+      cell: ({ row }) => (
+        <>
+          <Link
+            className="btn btn-sm btn-success mx-2"
+            to={`/update/${row.original.id}`}
+          >
+            Update
+          </Link>
+          {/* <button className="btn btn-sm btn-danger mx-2" onClick={() => { console.log(row.original.id) }}>Delete</button> */}
+          <button
+            className="btn btn-sm btn-danger mx-2"
+            onClick={() => handleDelete(row.original.id)}
+          >
+            Delete
+          </button>
+          <Link
+            className="btn btn-sm btn-outline-primary mx-2 "
+            to={`/read/${row.original.id}`}
+          >
+            View Details
+          </Link>
+        </>
+      ),
+    }),
+  ]);
 
   const table = useReactTable({
     data,
@@ -88,14 +98,13 @@ function App() {
                   {header.isPlaceholder
                     ? null
                     : flexRender(
-                      header.column.columnDef.header,
-                      header.getContext()
-                    )}
+                        header.column.columnDef.header,
+                        header.getContext()
+                      )}
                 </th>
               ))}
             </tr>
           ))}
-
         </thead>
         <tbody>
           {table.getRowModel().rows.map((row) => (
