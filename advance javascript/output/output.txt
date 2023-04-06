@@ -1,0 +1,81 @@
+                        ---------------reducer()-----------------
+script.js:3             arrReduce = [1,40,29]
+script.js:18             The sum of arrReduce is 70
+script.js:23             70
+script.js:33             (4) [{…}, {…}, {…}, {…}]
+script.js:37             Total Price using reduce() = 1760
+script.js:64             {21: Array(1), 22: Array(1), 24: Array(2), 25: Array(3), 30: Array(1)}
+script.js:1             -------------foreach()------------------
+script.js:5             (3) [100, 20, 30]
+script.js:14             The total of the above array is 150
+script.js:18             200
+script.js:18             40
+script.js:18             60
+script.js:22             The total of the above elements = 300
+script.js:25             (4) [{…}, {…}, {…}, {…}]
+script.js:31             Total Price using forEach() = 1760
+script.js:1             --------------find()----------------
+script.js:10             (4) [3, 10, 18, 20]
+script.js:18             Number grexater tha 18 = 20
+script.js:21             (8) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+script.js:28             {name: 'Rosy', age: 25, position: 'hr'}
+script.js:29             25
+script.js:30             Rosy
+script.js:5             --------------includes()----------------
+script.js:7             Welcome to Newzealand 123.
+script.js:8             Checking if "New" exist?
+script.js:13             true
+script.js:14             true
+script.js:1             -----------push()--------------------
+script.js:4             (4) [10, 20, 20, 50]
+script.js:8             (6) [10, 20, 20, 50, 24, 45]
+script.js:11             (3) ['gee', 'bee', 'lee']
+script.js:13             (6) ['gee', 'bee', 'lee', 'zee', 'jee', 'tee']
+script.js:16             (5) ['gee', 'bee', 'lee', 'zee', 'jee']
+script.js:20             The length of the above array is 6
+script.js:25             (3) ['red', 'green', 'blue']
+script.js:26             (4) ['cyan', 'magenta', 'yellow', 'back']
+script.js:30             (7) ['red', 'green', 'blue', 'cyan', 'magenta', 'yellow', 'back']
+script.js:35             (9) ['red', 'green', 'blue', 'cyan', 'magenta', 'yellow', 'back', 'pink', 'white']
+script.js:44             (4) [{…}, {…}, {…}, {…}]
+script.js:47             (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+script.js:4             ---------------map()------------------
+script.js:6             (4) [1, 4, 5, 6]
+script.js:9             0 1 (4) [1, 4, 5, 6]
+script.js:9             1 4 (4) [1, 4, 5, 6]
+script.js:9             2 5 (4) [1, 4, 5, 6]
+script.js:9             3 6 (4) [1, 4, 5, 6]
+script.js:16             (4) [10, 40, 50, 60]
+script.js:19             (4) [{…}, {…}, {…}, {…}]
+script.js:25             Total cost = 1760
+script.js:34             (4) [{…}, {…}, {…}, {…}]
+script.js:40             (4) ['Malcom Reynolds', 'Kaylee Frye', 'Jayne Cobb', 'Kanye West']
+script.js:50             (8) [24, 25, 25, 25, 24, 21, 30, 22]
+script.js:1             ------------filter()---------------------
+script.js:3             (6) [10, 5, 90, 556, 3, 6]
+script.js:8             I am returning number(s) greater than 10: 90,556
+script.js:9             I am returning number(s) less than 10: 5,3,6
+script.js:12             (8) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+script.js:16             (4) [{…}, {…}, {…}, {…}]
+script.js:1             --------------slice()--------------------
+script.js:3             The original array
+script.js:4             (5) ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango']
+script.js:11             A new array containing the selected elements are:
+script.js:12             (2) ['Orange', 'Lemon']
+script.js:15             Another new array containing the selected elements are:
+script.js:21             (3) ['Orange', 'Lemon', 'Apple']
+script.js:23             --------------splice()--------------------
+script.js:26             (4) ['Banana', 'Orange', 'Apple', 'Mango']
+script.js:27             Adding Lemon and Kiwi from index 2
+script.js:32             (6) ['Banana', 'Orange', 'Lemon', 'Kiwi', 'Apple', 'Mango']
+script.js:35             Removing 2 items from index 2
+script.js:39             (4) ['Banana', 'Orange', 'Apple', 'Mango']
+script.js:42             Adding two items(Lemon, Kiwi) and Removing 1 items from index 2
+script.js:44             (5) ['Banana', 'Orange', 'Lemon', 'Kiwi', 'Mango']
+promise.js:1             --------------------promises--------------------
+promise.js:1            5 12345
+promise.js:2            2 Payment Successful!
+promise.js:2            9 I have to be called
+async.js:19             ------------------async-wait-----------------------
+async.js:20             New salary: 1200
+async.js:28             The new salary is 1200.
